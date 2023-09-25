@@ -56,9 +56,7 @@
       <span class="info-value">{{JSON.parse(data).results[0].location.country}}</span>
     </div>
     </div>
-    <!-- <h1 class="name">This is a title</h1>
-    <h1 class="name">This is a title</h1>
-    <h1 class="name">This is a title</h1> -->
+    
     
     </div>
   </v-card>

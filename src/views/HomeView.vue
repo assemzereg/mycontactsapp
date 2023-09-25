@@ -1,7 +1,7 @@
 <template>
 <div class="home-container" >
 <div class="search-container">
-  <!-- <span :v-if="error"> Error Soemthing Happened {{error}}</span> -->
+
   <div v-if="isFetching">
     <p>
       Loading... {{isFetching}}
@@ -39,7 +39,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed  } from 'vue';
+import { defineComponent, ref  } from 'vue';
 import { useFetch } from '@vueuse/core';
 
 import _ from 'lodash'
@@ -59,7 +59,7 @@ export default defineComponent({
     const { data, error, isFetching } =  useFetch('https://randomuser.me/api/?results=100')
     const numberOfContacts = 100;
     const searchQuery = ref<string>('');
-  
+    
 
  
    
