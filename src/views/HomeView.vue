@@ -4,7 +4,7 @@
 
   <div v-if="isFetching">
     <p>
-      Loading... {{isFetching}}
+      Loading...
       </p>
 
 
@@ -22,7 +22,7 @@
   color="#007bff"
   clearable 
   hide-details="true"
-  v-model="searchQuery"
+  
   ></v-text-field>
   </div>
 </div>
@@ -41,7 +41,6 @@
 <script lang="ts">
 import { defineComponent, ref  } from 'vue';
 import { useFetch } from '@vueuse/core';
-
 import _ from 'lodash'
 // Components
 import CardVue from '../components/CardContact.vue';
@@ -64,7 +63,7 @@ export default defineComponent({
  
    
     return {
-      data,
+      data ,
       error,
       isFetching,
       searchQuery,
